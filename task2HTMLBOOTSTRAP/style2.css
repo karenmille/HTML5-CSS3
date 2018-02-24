@@ -1,0 +1,40 @@
+		.slide
+		{
+			background-image:url('assets/aboutme_background.jpg');
+			background-repeat:no-repeat;
+			overflow: hidden;
+			background-position:center; 
+			background-size: cover;
+			width: auto;
+			height: 75%;
+			
+		}
+		.bottom-section{
+			height: 25%;
+		}
+		
+		body,html{
+			height: 100%;
+			width: 100%;
+		
+		}
+		.navbar {
+			border-radius: 0 !important;
+		}
+		.card {
+			background: rgba(0,0,0,0.5);
+			padding: 20px;
+			color: #eee;
+			
+		}
+		.size{
+			height: 200px;
+			width: 200px;
+			float : left;
+			padding-left: 10px;
+			padding-right: 10px;
+		
+		}
+		h3{
+			text-align: center;
+		}
