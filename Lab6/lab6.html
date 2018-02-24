@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Video and audio lab">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Karen Moreno">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lab 6</title>
+		<!-- The style on CSS 
+		Body: background linear gradient fade a grey color on to the background: picture.
+		background: stay while the content scroll on top.
+		main & article: wrapp boxes that are center with shadow & border a shade of blue.
+		div: creates an animation and anyting that will be inside the div will scroll left to rigth. Empty Div to only show the square as animation.
+		p:border: creates a box to warp any content inside the tag.
+		@-webkit-keyframes mymove & @keyframes mymove: controls the pace & direction of animation.-->
+		
+		<style type="text/css">
+			body {
+				
+				background-color: black;
+				background-image:url('assets/background3.jpg');
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				background-position:center; 
+				background-size: 100%;
+				background-attachment: fixed;
+				background-repeat: no-repeat;		
+				background-image: linear-gradient(to right, black 0%,white 120%), url('assets/background3.jpg'); 
+				background-blend-mode:lighten; 
+				padding-top: 10px;
+			}
+				
+			main{
+				background-color:rgba(0, 0, 0, 0.4);
+				box-shadow:50px 50px 20px  #e6f9ff;
+				color:#ffffff;
+				text-align:center;
+				padding:5%;
+				border-style:solid;
+				border-color:#00bfff;
+				border-width:1px;
+				margin-left:25%;
+				margin-right:25%;
+					
+			}
+			
+			article{
+				background-color:rgba(0, 0, 0, 0.4);
+				box-shadow:50px 50px 20px  #e6f9ff;
+				color:#ffffff;
+				text-align:center;
+				padding:5%;
+				border-style:solid;
+				border-color:#00bfff;
+				border-width:1px;
+				margin-left:25%;
+				margin-right:25%;
+			}
+			
+			hr{
+				display: block;
+				margin-top: 2.5em;
+				margin-bottom: 0.5em;
+				margin-left: auto;
+				margin-right: auto;
+				border-style: inset;
+				border-width: 2px;
+			}
+			
+			h1	{
+				color:#00bfff;
+				text-shadow: 3px 2px #e6f9ff;
+				font-size: 2.5em;
+				text-align: center;
+				font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+				
+			}
+			
+			h2 {
+				color:#00bfff;
+				font-size: 1.5em;
+				margin-left: 2px;
+				font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+			}
+			
+			h4, a, footer {
+				color:#e6f9ff;
+				text-align: center;
+			}
+			
+			div {
+				width: 10px;
+				height: 5px;
+				background: #00bfff;
+				position: relative;
+				-webkit-animation: mymove 5s infinite;
+				animation: mymove 5s infinite;
+			}
+			
+			@-webkit-keyframes mymove {
+				from {left: 0px;}
+				to {left: 200px;}
+			}
+
+			@keyframes mymove {
+				from {left: 0px;}
+				to {left: 200px;}
+			}
+			
+			p {
+				border: 5px solid #00bfff; 
+			}
+		</style>
+	</head>
+	<body>
+		<a id="PageTop">*</a>
+		<header>
+			<h1>OSI vs IA Model-Which do you prefer?</h1>
+			<div>
+			</div>
+		</header>
+		<main>
+			<h2>Internet Architecture</h2>
+			<h4>Video</h4>
+			<!-- this is a video on HTML5 with 2 difernt file formats-->
+			<br />
+			<video height="300" width="300" poster="assets/osivstcposter.jpeg" controls >
+				<source src="assets/tcp_osi.ogg" type="video/ogg" />
+				<source src="assets/tcp_osi.mp4" type="video/mp4">
+				your browser is old! get a newone.
+			</video>
+			<br />
+			<br />
+			<br />
+			<p>
+				In HTML5, there are 3 supported video formats: MP4, WebM, and Ogg.
+				The source element allows you to specify alternative video files
+				which the browser may choose from. The browser will use the first recognized
+				format.
+			</p>
+			<br />
+			<br />
+			<!-- picture with example tag on how to download video on html5 or 2 difernet formats -->
+			<img src="assets/examvideo.jpg" alt="example" height="300" width="300" />
+			<br />
+			<ol>
+				<li>Download Free HTML5 Video Player and Converter. This is an absolutely free program. ...</li>
+				<li>Launch Free HTML5 Video Player and Converter. ...</li>
+				<li>Select Input Video Files. ...</li>
+				<li>Select Output Location. ...</li>
+				<li>Select Presets. ...</li>
+				<li>Convert Video. ...</li>
+				<li>Playback Converted File. ...</li>
+				<li>Place the HTML5 Video on Your Site.</li>
+			</ol>
+			<br />	
+			<!-- picture with example tag on how to convert video files for html5 or 2 difernet formats and proper links to web page to download the sofware			 -->
+			<a href="https://www.dvdvideosoft.com/guides/free-html5-video-player-and-converter.htm" target="_blank" ><img src="assets/freeconverter.png" alt="example" height="300" width="300" ></a>
+			<br />
+		
+		</main>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<article>
+			<h2>OSI Reference Model</h2>
+			<h4>Audio</h4>
+			<br />
+			<img src="assets/osiposter.jpeg" alt="poster" height="300" width="300" />
+			<br />
+			<!-- this is audio on HTML5 with 2 difernt file formats-->
+			<audio controls>
+				<source src= "assets/osi_voice.mp3" type="audio/mp3"/>
+				<source src="assets/osi_voice.ogg" type="audio/ogg">
+				your browser does not not support the audio tag.
+			</audio>
+			<br /><br />
+			<blockquote>
+				An audio player with two source files. 
+				The browser should choose which file (if any) it has support for
+			</blockquote>
+			<br />
+			<!-- picture with example tag on how to download audio on html5 or 2 difernet formats -->
+			<img src="assets/examaudio.jpg" alt="example" height="300" width="300" />
+			<br />
+			<p>
+				Convert wma, wav, aiff, ogg and 40 other audio file formats. It can convert mp3,
+				wav or wma format and more to the format of your choice. 
+				Switch Audio Converter is very easy to use. Just add the files you
+				want to convert to the list, select the format you want to use, 
+				and then click the convert button.
+			</p>
+			<br />
+			<!-- picture with example tag on how to convert audio files for html5 or 2 difernet formats and proper links to web page to download the sofware	 -->
+			<a href="http://www.nch.com.au/switch/mp3.html?gclid=CKSPqNC9n9UCFRMo0wod0pkFDA" target="_blank" ><img src="assets/audioconverter.gif" alt="example" height="300" width="300" ></a>
+		</article>
+		<br />
+		<br />
+		<footer>
+			<hr />
+			<nav>
+				<a href="#PageTop">Back to top of the page</a>
+			</nav>
+			<br />
+			<a href="mailto:karen_m_50@hotmail.com">Email me </a><!-- this is a link to email-->
+			<br />
+			<h4>&copy; Karen Miller 2017</h4>  
+		</footer>
+	</body>
+</html>
