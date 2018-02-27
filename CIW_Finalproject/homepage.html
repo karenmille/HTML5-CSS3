@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>                                                                               
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Video and audio lab">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Karen Miller">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Comments page</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<style>
+			body{
+				background-image:url('assets/aboutme_background.jpg');
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				background-position:center; 
+				background-size: 100%;
+			}
+			@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+			
+			.home {
+				
+				font-family: "Lato", sans-serif;
+			}	
+			aside{
+				background-color:rgba(0, 0, 0, 0.4);
+				box-shadow:10px 10px 20px  #e6f9ff;
+				color:#ffffff;
+				text-align:center;
+				padding:5%;
+				border-style:solid;
+				border-color:red;
+				border-width:1px;
+				border-radius: 20px;
+				margin-left: 35%;
+				margin-right: 35%;
+				margin: auto;	
+			}
+		
+			.picCenter {
+					
+				display: block;
+				margin: auto;
+				width: 20%;
+				border-radius: 100%;
+				float: center;
+			}
+
+			main {
+				text-align: center;
+				padding: .3em .3em;
+				margin: 14% 14%;
+				font-family: "Lato", sans-serif;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<a id="PageTop">*</a> 
+		<div class="navigationbar" >
+			<nav>
+			<ul>
+				<li><a class="active2" href="">Home</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="certifications.html">Certifications</a></li>
+				<li><a href="programminglanguages.html">Programming Languages</a></li>
+			</ul>
+			</nav>
+		
+		</div>
+		
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		
+		<header>
+			<img src="assets/headshot.jpg" alt="headshot" width="271" height="282" class="picCenter">
+			<img src="assets/Linkedin.png" alt="linkeding icon" width="50" height="50" class="picLside">
+			<img src="assets/googleplus.png" alt="google icon" width="50" height="50" class="picRside">
+			<img src="assets/twiter.png" alt=" icon" width="50" height="50" class="picLside2">
+			<img src="assets/facebook.png" alt=" icon" width="50" height="50" class="picRside2">
+			<img src="assets/instagram.png" alt=" icon" width="50" height="50" class="center2">
+		</header>
+		
+		<main>
+			<h1>Hi, I'm Karen Miller!</h1>
+			<h2>Computer Programmer</h2>
+			<blockquote>Developer with proven skills, multilingual and proficient in multinational
+			environments. Advanced programming skills, software engineering, extensive 
+			knowledge of many kinds of professional software. Positive, dynamic and open 
+			minded, committed and rigorous, self-starter, quick-learner.</blockquote>
+		</main>
+		
+		
+		<aside>
+			<form name = "practiceform" action= "http://ss1.ciwcertified.com/cig-bin/process.pl" method = "post"/>
+				<fieldset>
+					<legend><h3>Sing up to Network</h3></legend>
+					<label for="fname"></label> <input type= "text" placeholder="Name" name ="firstname" id = "fname" size ="20"/> 
+					<label for="email"></label> <input type= "text" placeholder="Email" name ="firstname" id = "fname" size ="20"/>
+					<!-- submit butom -->
+					<br />
+					<input type= "Submit"  value= "submit">
+				</fieldset>
+			</form>
+		</aside>
+			
+		<br />
+
+		<footer>
+				
+			<a href="#PageTop">Back to top of the page</a> 
+				
+			<br />
+			<!-- <a href="mailto:karen_m_50@hotmail.com">Email me </a> -->
+			<!-- this is a link to email--> 
+			<br />
+			<h4>&copy; Karen Miller 2017</h4>  
+		</footer>
+	</body>
+</html>
